@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="pl">
 	<head>
-		<title>Facebook Login JavaScript Example</title>
-		<meta charset="UTF-8">
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<meta name="keywords" content="html, css" />
+		<title>PWI</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="spa.js"></script>
+	</head> 
 	<body>
+		<div class="wrapper">
+			<div id="header">
+				<a onClick="changePage('home')"><img src="logoblack.png" alt="Logo" id="logo"/></a>
+				<h6><i>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</i></h6>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="#ttt" onClick="changePage('ttt')">Kółko + krzyżyk</a></li>
+					<li><a href="#form" onClick="changePage('form')">Formularz RegEx</a></li>
+					<li><a href="https://callistouma.github.io/fb-api/">Facebook API</a></li>
+					<li><a href="https://gtmetrix.com/">GTMetrix</a></li>
+					<li><a href="http://validator.w3.org/">W3C HTML</a></li>
+					<li><a href="https://jigsaw.w3.org/css-validator/">W3C CSS</a></li>
+				</ul>
+			</div>
+		<div class="content">
 		<script>
 		  // This is called with the results from from FB.getLoginStatus().
 		  function statusChangeCallback(response) {
@@ -92,6 +113,7 @@
 
 		<div id="status">
 		</div>
-
+		</div>
+		</div>
 	</body>
 </html>
