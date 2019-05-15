@@ -84,14 +84,15 @@
 		  // successful.  See statusChangeCallback() for when this call is made.
 		  function testAPI() {
 		    console.log('Welcome!  Fetching your information.... ');
-		    FB.api('/me', { fields: 'name, email,id,first_name' }, function(response) {
+		    FB.api('/me', { fields: 'name, email,id,first_name,last_name' }, function(response) {
 		      console.log('Successful login for: ' + response.name);
 		      document.getElementById('status').innerHTML =
 		        'Thanks for logging in, ' + response.name + '!\n Post ID:'  + response.id;
-		      document.getElementById('fbImie').innerHTML = response.name;
-		      document.getElementById('fbNazwisko').innerHTML = response.first_name;
+		      document.getElementById('fbImie').innerHTML = response.first_name;
+		      document.getElementById('fbNazwisko').innerHTML = response.last_name;
 		      document.getElementById('fbId').innerHTML = response.id;
 		      document.getElementById('fbEmail').innerHTML = response.email;
+		      document.getElementById('fbImg').innerHTML = "https://graph.facebook.com/"+response.id+"/picture?type=large";
 		    });
 		  }
 		</script>
@@ -114,7 +115,9 @@
 				<div class="colL">ID:</div>
 				<div class="colR" id="fbId"></div>
 				<div class="colL">E-mail:</div>
-				<div class="colR" id="fbEmail"></div><br/>
+				<div class="colR" id="fbEmail"></div>
+				<div class="colL">Link do zdjęcia:</div>
+				<div class="colR" id="fbImg"></div><br/>
 				</div>
 			</div>
 		</div>
