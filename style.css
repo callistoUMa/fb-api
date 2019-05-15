@@ -100,7 +100,7 @@ li a:hover {
 }
 #contentmain {
 	float:left;
-	width: 70%;
+	width: 100%;
 	background-image:url("tlocontent.jpg");
 }
 #contentadditional {
