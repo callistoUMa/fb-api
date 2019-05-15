@@ -11,9 +11,10 @@
 	</head> 
 	<body>
 		<div class="wrapper">
-			<div id="header">
-				<a onClick="changePage('home')"><img src="logoblack.png" alt="Logo" id="logo"/></a>
-				<h6><i>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</i></h6>
+			<div id="nav">
+				<ul>
+					<li><a href="http://wpiatek2.cba.pl/">Powrót</a></li>
+				</ul>
 			</div>
 		<script>
 		  // This is called with the results from from FB.getLoginStatus().
@@ -96,12 +97,22 @@
 		  the JavaScript SDK to present a graphical Login button that triggers
 		  the FB.login() function when clicked.
 		-->
-		<div class="alignC">
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-		</fb:login-button>
-
-		<div id="status">
-		</div>
+		<div id="contentmain">
+			<div class="alignC">.</div><br/>
+			<div class="alignCC">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button></div><br />
+			<div class="alignC">
+				<div class="colL">Imię:</div>
+				<div class="colR" id="fbImie"></div>
+				<div class="colL">Nazwisko:</div>
+				<div class="colR" id="fbNazwisko"></div>
+				<div class="colL">ID:</div>
+				<div class="colR" id="fbId"></div>
+				<div class="colL">E-mail:</div>
+				<div class="colR" id="fbEmail"></div>
+				<div id="status"></div>
+				</div>
 			</div>
 		</div>
 	</body>
