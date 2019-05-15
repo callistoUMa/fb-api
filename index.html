@@ -88,6 +88,9 @@
 		      console.log('Successful login for: ' + response.name);
 		      document.getElementById('status').innerHTML =
 		        'Thanks for logging in, ' + response.name + '!\n Post ID:'  + response.id;
+		      document.getElementById('fbImie').innerHTML = response.name;
+		      document.getElementById('fbId').innerHTML = response.id;
+		      document.getElementById('fbEmail').innerHTML = response.email;
 		    });
 		  }
 		</script>
