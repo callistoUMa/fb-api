@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+!DOCTYPE html> 
 <html lang="pl">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,13 +86,7 @@
 		    FB.api('/me', function(response) {
 		      console.log('Successful login for: ' + response.name);
 		      document.getElementById('status').innerHTML =
-		        'Thanks for logging in, ' + response.name 
-			    + '!\n Imię:\t'  + response.name
-			    + '!\n Id użytkownika:\t'  + response.id
-			    + '!\n Płeć:\t'  + response.gender
-			    + '!\n Data urodzin:\t'  + response.birthday
-			    + '!\n Rodzinne miasto:\t'  + response.hometown
-			    + '!\n Zdjęcie profilowe:\t'  + response.picture.data.url;
+		        'Thanks for logging in, ' + response.name + '!\n Post ID:'  + response.id;
 		    });
 		  }
 		</script>
@@ -103,8 +97,7 @@
 		  the FB.login() function when clicked.
 		-->
 		<div class="alignC">
-		<fb:login-button scope="public_profile,email,user_birthday,user_hometown,user_location,user_website,user_work_history,user_about_me
-" onlogin="checkLoginState();">
+		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
 
 		<div id="status">
