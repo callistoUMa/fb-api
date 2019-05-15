@@ -17,7 +17,7 @@ ul {
 }
 li {
 	float: left;
-	width:16.6%;
+	width:100%;
 	letter-spacing: 2px;
 }
 li a {
@@ -135,7 +135,7 @@ li a:hover {
 @media only screen and (max-width:800px){
   /* tablety */
   li {
-	  min-width:33.3%;
+	  min-width:100%;
   }
   .wrapper {
     width: 90%;
@@ -171,6 +171,11 @@ li a:hover {
 {
 	padding: 1%;
 	text-align: center;
+}
+.alignCC
+{
+	margin:auto;
+	width:10%;
 }
 input[type=text]{
 	min-width:50%;
