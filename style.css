@@ -135,7 +135,7 @@ li a:hover {
 @media only screen and (max-width:800px){
   /* tablety */
   li {
-	  min-width:100%;
+	  min-width:50%;
   }
   .wrapper {
     width: 90%;
